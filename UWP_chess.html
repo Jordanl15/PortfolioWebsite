@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UWP Chess Info</title>
+    <link rel="stylesheet" href="UWP_chess.css">
+</head>
+<body>
+    
+    <nav id="navbar">
+        <h1><a href="index.html" class="navbar-link">Jordan Lucciola</a></h1>
+        <button class="hamburger" id="hamburger-btn">&#9776;</button>
+
+           
+        <ul>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="Assets/Images/JordanLucciola_Resume.pdf" target="_blank">Download Resume</a></li>
+        </ul>
+    </nav>
+
+    <div class="info-text">
+        <h2>UWP Chess Game</h2>
+        <p>
+            I developed this Chess game using pure C# without relying on any external libraries. The game is built as a Universal Windows Application (UWP), offering a seamless experience on Windows devices.
+        </p>
+        <p>
+            The game features logic that tracks the score whenever a piece is captured, ensuring that the game is always up to date. It also prevents illegal moves and checks for checkmate, maintaining the integrity of the game. 
+        </p>
+        <p>
+            A unique feature of this game is the customization options in the "Settings" page. Users can personalize the chessboard by selecting two colors: one for one set of tiles and another for the other set. Once you've made your selections, simply save the changes and apply them to update the board.
+        </p>
+        <p>
+            The game then returns to the board view, ready for play with the newly selected tile colors.
+        </p>
+    </div>
+
+    
+
+    <div class="container">
+        <div class="section-wrapper">
+            <div class="subheading-left">
+                <h3>Starting the Game</h3>
+            </div>
+            <div class="section">
+                <p>
+                    When the game begins, the white pieces always make the first move. Once white has moved, it becomes black's turn. The game alternates turns in this manner throughout.
+                </p>
+                <img src="Assets/Images/UWP_Chess/UWP_Chess_1.png" alt="Chess game starting screen">
+            </div>
+        </div>
+    
+        <div class="section-wrapper">
+            <div class="section">
+                <img src="Assets/Images/UWP_Chess/UWP_Chess_2.png" alt="Piece movement restrictions in chess">
+                <p>
+                    Each chess piece is restricted to its legal moves based on traditional chess rules. You can only move a piece to valid positions on the board.
+                </p>
+            </div>
+            <div class="subheading-right">
+                <h3>Moving Pieces</h3>
+            </div>
+        </div>
+    
+        <div class="section-wrapper">
+            <div class="subheading-left">
+                <h3>Keeping Score</h3>
+            </div>
+            <div class="section">
+                <p>
+                    Every time a piece is captured, the score updates at the bottom of the screen. It also displays the specific piece that was taken during the game.
+                </p>
+                <img src="Assets/Images/UWP_Chess/UWP_Chess_3.png" alt="Score update after capturing a piece">
+            </div>
+        </div>
+    
+        <div class="section-wrapper">
+            <div class="section">
+                <img src="Assets/Images/UWP_Chess/UWP_Chess_Settings_1.png" alt="Board color customization settings">
+                <p>
+                    Navigate to the settings page to customize the board's appearance. You can select two colors: one for the light tiles and one for the dark tiles.
+                </p>
+            </div>
+            <div class="subheading-right">
+                <h3>Customizing the Board</h3>
+            </div>
+        </div>
+    
+        <div class="section-wrapper">
+            <div class="subheading-left">
+                <h3>Saving Settings</h3>
+            </div>
+            <div class="section">
+                <p>
+                    Once you’ve chosen your desired colors, click "Save Changes" to apply them. If you change your mind, you can press "Cancel" to keep the previously selected colors.
+                </p>
+                <img src="Assets/Images/UWP_Chess/UWP_Chess_Settings_2.png" alt="Save or cancel board settings changes">
+            </div>
+        </div>
+    
+        <div class="section-wrapper">
+            <div class="section">
+                <img src="Assets/Images/UWP_Chess/UWP_Chess_New_Colours.png" alt="Chessboard with new customized colors">
+                <p>
+                    After saving and applying your changes, the game will return to the main screen. The chessboard will now display the colors you selected, and you can continue playing as before.
+                </p>
+            </div>
+            <div class="subheading-right">
+                <h3>New Board</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="blue-bar">
+
+    </div>
+    
+
+</body>
+</html>

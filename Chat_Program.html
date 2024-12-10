@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Chat Program Info</title>
+    <link rel="stylesheet" href="Chat_Program.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <h1><a href="index.html" class="navbar-link">Jordan Lucciola</a></h1>
+        <button class="hamburger" id="hamburger-btn">&#9776;</button>
+        <ul>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#resume">Download Resume</a></li>
+        </ul>
+    </nav>
+
+    <div class="info-text">
+        <h2>Java Chat Program</h2>
+        
+        <p>
+            This application allows users to connect to a server, send and receive messages, and manage server connections. The server manages multiple clients, broadcasting messages and maintaining a user list. The client side allows users to connect, change ports, and send messages using a graphical interface. Server-side features include client management, broadcasting user lists, and handling incoming messages. The application is built using Java with JFrame for the user interface and TCP/IP socket programming for communication.
+        </p>
+    </div>
+
+
+
+    <div class="container">
+        <div class="section-wrapper">
+            <div class="subheading-left">
+                <h3>Starting the server</h3>
+            </div>
+            <div class="section">
+                <p>
+                    The server interface includes a port configuration screen. Users can either select an existing port or specify a new one. Any newly specified port is saved locally and will be used by default in future sessions. Once the "Connect" button is pressed, the server begins running and is ready to accept client connections.
+                </p>
+                <img src="Assets/Images/Java_Port_Connect.png" alt="Port Configuration Screen">
+            </div>
+        </div>
+
+        <div class="section-wrapper">
+            
+            <div class="section">
+               
+                <img src="Assets/Images/Java_Server_List.png" alt="Server Connection List">
+                <p>
+                    When a client connects, they are presented with the same port configuration interface. If the client attempts to connect with a mismatched port, the application prompts them to ensure the port settings align with the server. Upon successful connection, the client is asked to provide a username. Once connected, the server GUI updates to display the new client’s username and connection status.
+                </p>
+            </div>
+            <div class="subheading-right">
+                <h3>Connecting to the server</h3>
+            </div>
+        </div>
+        
+
+        <div class="section-wrapper">
+            <div class="subheading-left">
+                <h3>Sending messages</h3>
+            </div>
+            <div class="section">
+                <p>
+                    After successfully connecting, the client gains access to the chat interface. Users can send and receive messages in real-time. The connected clients are displayed in a dedicated "Connected Users" section, while the chat area shows all messages along with the sender’s username. This ensures seamless communication among all connected clients.
+                </p>
+                <img src="Assets/Images/Java_Chat.png" alt="Chat Interface">
+            </div>
+        </div>
+    </div>
+
+    <div class="blue-bar">
+
+    </div>
+
+</body>
+</html>
